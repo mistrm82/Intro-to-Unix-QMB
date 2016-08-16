@@ -1,10 +1,7 @@
 ---
 title: "The Shell"
 author: "Sheldon  McKay, Mary Piper, Radhika Khetani"
-date: "Thursday, May 5, 2016"
 ---
-
-Approximate time: 90 minutes
 
 Adapted from the lesson by Tracy Teal.
 Original contributors:
