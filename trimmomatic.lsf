@@ -8,7 +8,9 @@
 #BSUB -e %J.err       # File to which standard err will be written
 
 # Change directories into the folder with the untrimmed fastq files
-cd ~/unix_workshop/rnaseq_project/data/untrimmed_fastq
+cd ~/unix-intro/raw-fastq/
+
+mkdir -p ../trimmed_fastq/
 
 # Loading modules for tools
 module load seq/Trimmomatic/0.33
