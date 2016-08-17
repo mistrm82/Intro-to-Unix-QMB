@@ -433,7 +433,7 @@ mv
 rm
 nano
 ```
-#### Want to learn more about the shell?
+### Want to learn more about the shell?
 
 shell cheat sheets:<br>
 * [http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/](http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
