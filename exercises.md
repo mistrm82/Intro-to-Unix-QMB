@@ -1,5 +1,5 @@
 
-### **Exercise 1**: "Quality trimming on 6 Fastq files, in serial with multithreading"
+### Exercise 1: "Quality trimming on 6 Fastq files, *in serial* with multithreading"
 * Log into Orchestra using Terminal or Putty or Git BASH
 * Start an interactive session with a single core
 * Change directories into the `~/unix-intro/`, and move the `trimmomatic-serial.lsf` file/script from the `other` directory to your current directory (`~/unix-intro/`)
@@ -12,7 +12,7 @@
 * List only those files that end in `.zip`, 
 
 
-### **Exercise 2**: "Quality trimming on 6 Fastq files, in parallel with multithreading"
+### Exercise 2: "Quality trimming on 6 Fastq files, *in parallel* with multithreading"
 * Check and make sure you have an interactive session going and also that you are in the `~/unix-intro/` directory.
 * Copy over the `trimmomatic-on-input-file.sh` and `trimmomatic-multithreaded.sh` files from the `other` directory to your current directory
 * Use `nano` to open the `trimmomatic-multithreaded.sh` file and make note of the bsub submission command in it. Is this a file that can be submitted to LSF using `bsub < scriptname`?
