@@ -57,11 +57,11 @@ Make sure that your command prompt is now preceded by a character string that co
 
 Copy the example data folder to your home directory using the following command:
 
-```$ cp -r /groups/hbctraining/unix_workshop/ unix-intro ```  
+```$ cp -r /groups/hbctraining/unix-intro/ unix-intro ```  
 
 `cp` is the command for copy. 
 
-This command required you to specify the location of the item(s) you want to copy (`/groups/hbctraining/unix_workshop/`) and the location of the destination (`unix-intro`); please note the space between the 2 in the command. The "-r" is an option/argument that modifies the copy command to do something slightly different than usual. 
+This command required you to specify the location of the item(s) you want to copy (`/groups/hbctraining/unix-intro/`) and the location of the destination (`unix-intro`); please note the space between the 2 in the command. The "-r" is an option/argument that modifies the copy command to do something slightly different than usual. 
 
 ## Starting with the shell
 
