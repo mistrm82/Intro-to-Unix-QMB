@@ -3,11 +3,6 @@ title: "The Shell"
 author: "Sheldon  McKay, Mary Piper, Radhika Khetani"
 ---
 
-Adapted from the lesson by Tracy Teal.
-Original contributors:
-Paul Wilson, Milad Fatenejad, Sasha Wood and Radhika Khetani for Software Carpentry (http://software-carpentry.org/)
-
-
 ## Setting up
 
 We will spend most of our time learning about the basics of the shell by manipulating some experimental data.
