@@ -1,6 +1,6 @@
 ---
-title: "The Shell"
-author: "Sheldon  McKay, Mary Piper, Radhika Khetani"
+title: "Shell basics"
+authors: "Sheldon  McKay, Mary Piper, Radhika Khetani"
 ---
 
 ## Setting up
