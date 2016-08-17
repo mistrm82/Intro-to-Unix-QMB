@@ -322,7 +322,7 @@ a file that contains some text. We'll name this file 'awesome.txt'.
 
 Now you have something that looks like
 
-![nano1.png](../img/nano1.png)
+<img src="../img/nano1.png" width="400">
 
 Type in a sentence, something like "nano is for writing and editing small files and scripts"
 
