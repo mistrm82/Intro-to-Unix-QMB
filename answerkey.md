@@ -41,7 +41,7 @@
 
 * When the job is completed it will create a new directory with new files: What is the name of the new directory? How many new files and directories were created within it?
 
-***The new directory is called `trimmed_fastq_LSFout/`, and it has 18 files within it, no directories.***
+**Answer: The new directory is called `trimmed_fastq_LSFout/`, and it has 18 files within it, no directories.**
 
 * List only those files that end in `.zip`, 
 
@@ -72,4 +72,4 @@
 
 **Answer: This set of scripts ran trimming on a fastq file at a time in a multithreaded fashion, but ran them side-by-side (in parallel) for all 6 files (pending status notwithstanding). Whereas the first script ran trimming in a multithreaded fashion also, but it ran it on the 6 files serially, one after the other.**
 
-***The second exercise was more efficient since it used parallelization (each file had it's own job) and multithreading, instead of only multithreading (all files were run in a single job).**
+**The second exercise was more efficient since it used parallelization (each file had it's own job) and multithreading, instead of only multithreading (all files were run in a single job).**
