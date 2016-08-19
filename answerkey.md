@@ -6,30 +6,31 @@
 
 * Start an interactive session with a single core
  
-`bsub -Is -q interactive bash` 
+***`bsub -Is -q interactive bash` ***
 
 * Change directories into the `~/unix-intro/`, and move the `trimmomatic-serial.lsf` file/script from the `other` directory to your current directory (`~/unix-intro/`)
-```
+
+***```
 cd unix-intro/
 mv other/trimmomatic-serial.lsf .
-```
+```***
 
 * Open the script with `nano`
  
-`nano trimmomatic-serial.lsf`
+***`nano trimmomatic-serial.lsf`***
 
 * Modify the LSF (bsub) directives to use only 4 cores
 * Add a bsub directive to make sure that you get an email when the job completes
 
-``` 
+***``` 
 # modify the following inside the script
 #BSUB -n 4
 #BSUB -N
-```
+```***
 
 * Submit the script to the LSF queue using `bsub` (Hint: Job submissions use special syntax and just `bsub scriptname.lsf` will not work)
 
-`bsub < trimmomatic-serial.lsf`
+***`bsub < trimmomatic-serial.lsf`***
 
 * Once submitted, immediately check the status of your job. How many jobs do you see running? Is there a difference in the "Queue" on which they are running?
 
