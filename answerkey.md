@@ -41,7 +41,7 @@
 
 * List only those files that end in `.zip`, 
 
-***ls -l trimmed_fastq_LSFout/*.zip***
+***```ls -l trimmed_fastq_LSFout/*.zip```***
 
 
 ### Exercise 2: "Quality trimming on 6 Fastq files, *in parallel* with multithreading"
