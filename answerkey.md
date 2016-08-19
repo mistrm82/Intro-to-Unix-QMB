@@ -48,7 +48,7 @@
 * Check and make sure you have an interactive session going and also that you are in the `~/unix-intro/` directory.
 * Copy over the `trimmomatic-on-input-file.sh` and `trimmomatic-multithreaded.sh` files from the `other` directory to your current directory
 
-***`cp other/trimmomatic*sh .`***
+`cp other/trimmomatic*sh .`
 
 * Use `nano` to open the `trimmomatic-multithreaded.sh` file and make note of the bsub submission command in it. Is this a file that can be submitted to LSF using `bsub < scriptname`?
 
