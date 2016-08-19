@@ -66,6 +66,6 @@ mv other/trimmomatic-serial.lsf .
 * Once again, when the job is complete a new directory with new files will be created. Use `ls -l` to determine if the same output was generated for both.
 * What do you think the advantage is of running the job(s) this way as compared to Exercise 1?
 
-*** This set of scripts ran trimming on a fastq file at a time in a multithreaded fashion, but ran them side-by-side (in parallel) for all 6 files (pending status notwithstanding). Whereas the first script ran trimming in a multithreaded fashion also, but it ran it on the 6 files serially, one after the other.***
+***This set of scripts ran trimming on a fastq file at a time in a multithreaded fashion, but ran them side-by-side (in parallel) for all 6 files (pending status notwithstanding). Whereas the first script ran trimming in a multithreaded fashion also, but it ran it on the 6 files serially, one after the other.***
 
 ***The second exercise was more efficient since it used parallelization (each file had it's own job) and multithreading, instead of only multithreading (all files were run in a single job).***
