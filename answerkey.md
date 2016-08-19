@@ -2,7 +2,7 @@
 ### Exercise 1: "Quality trimming on 6 Fastq files, *in serial* with multithreading"
 * Log into Orchestra using Terminal or Putty or Git BASH
 
-`ssh ecommonsid@orchestra.med.harvard.edu` 
+***`ssh ecommonsid@orchestra.med.harvard.edu`***
 
 * Start an interactive session with a single core
  
