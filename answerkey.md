@@ -6,7 +6,7 @@
 
 * Start an interactive session with a single core
  
-***`bsub -Is -q interactive bash` ***
+***`bsub -Is -q interactive bash`***
 
 * Change directories into the `~/unix-intro/`, and move the `trimmomatic-serial.lsf` file/script from the `other` directory to your current directory (`~/unix-intro/`)
 
