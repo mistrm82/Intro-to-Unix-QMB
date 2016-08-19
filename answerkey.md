@@ -1,10 +1,13 @@
 
 ### Exercise 1: "Quality trimming on 6 Fastq files, *in serial* with multithreading"
 * Log into Orchestra using Terminal or Putty or Git BASH
+* 
 `ssh ecommonsid@orchestra.med.harvard.edu` 
 
 * Start an interactive session with a single core
+* 
 `bsub -Is -q interactive bash` 
+
 * Change directories into the `~/unix-intro/`, and move the `trimmomatic-serial.lsf` file/script from the `other` directory to your current directory (`~/unix-intro/`)
 ```
 cd unix-intro/
@@ -12,6 +15,7 @@ mv other/trimmomatic-serial.lsf .
 ```
 
 * Open the script with `nano`
+* 
 `nano trimmomatic-serial.lsf`
 
 * Modify the LSF (bsub) directives to use only 4 cores
@@ -24,9 +28,11 @@ mv other/trimmomatic-serial.lsf .
 ```
 
 * Submit the script to the LSF queue using `bsub` (Hint: Job submissions use special syntax and just `bsub scriptname.lsf` will not work)
+
 `bsub < trimmomatic-serial.lsf`
 
 * Once submitted, immediately check the status of your job. How many jobs do you see running? Is there a difference in the "Queue" on which they are running?
+
 `bjobs`
 
 * When the job is completed it will create a new directory with new files: What is the name of the new directory? How many new files and directories were created within it?
@@ -34,12 +40,14 @@ mv other/trimmomatic-serial.lsf .
 ***The new directory is called `trimmed_fastq_LSFout/`, and it has 18 files within it, no directories.***
 
 * List only those files that end in `.zip`, 
-` ls -l trimmed_fastq_LSFout/*.zip`
+
+`ls -l trimmed_fastq_LSFout/*.zip`
 
 
 ### Exercise 2: "Quality trimming on 6 Fastq files, *in parallel* with multithreading"
 * Check and make sure you have an interactive session going and also that you are in the `~/unix-intro/` directory.
 * Copy over the `trimmomatic-on-input-file.sh` and `trimmomatic-multithreaded.sh` files from the `other` directory to your current directory
+
 `cp other/trimmomatic*sh .`
 
 * Use `nano` to open the `trimmomatic-multithreaded.sh` file and make note of the bsub submission command in it. Is this a file that can be submitted to LSF using `bsub < scriptname`?
