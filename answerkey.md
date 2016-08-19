@@ -1,11 +1,11 @@
 
 ### Exercise 1: "Quality trimming on 6 Fastq files, *in serial* with multithreading"
 * Log into Orchestra using Terminal or Putty or Git BASH
-* 
+
 `ssh ecommonsid@orchestra.med.harvard.edu` 
 
 * Start an interactive session with a single core
-* 
+ 
 `bsub -Is -q interactive bash` 
 
 * Change directories into the `~/unix-intro/`, and move the `trimmomatic-serial.lsf` file/script from the `other` directory to your current directory (`~/unix-intro/`)
@@ -15,7 +15,7 @@ mv other/trimmomatic-serial.lsf .
 ```
 
 * Open the script with `nano`
-* 
+ 
 `nano trimmomatic-serial.lsf`
 
 * Modify the LSF (bsub) directives to use only 4 cores
