@@ -326,7 +326,7 @@ Now you have something that looks like
 
 Type in a sentence, something like "nano is for writing and editing small files and scripts"
 
-Now we want to save the file and exit. At the bottom of nano, you see the "\^X Exit". That means that we use Ctrl-X to exit. Type `Ctrl-X`. It will ask if you want to save it. Type `y` for yes. Then it asks if you want that file name. Hit 'Enter'.
+Now we want to save the file and exit. At the bottom of nano, you see the "\^X Exit". That means that we use <kbd>Ctrl</kbd> then <kbd>x</kbd> to exit. Type  <kbd>Ctrl-x</kbd>. It will ask if you want to save it. Type `y` for yes. Then it asks if you want that file name. Hit 'Enter'.
 
 Now you've written a file. You can take a look at it with less or cat, or open it up again and edit it.
 
@@ -398,36 +398,14 @@ Finally, the special character `.` always refers to your current directory. So, 
 
 To summarize, while you are in your home directory, the commands `ls ~`, `ls ~/.`, and `ls /home/username` all do exactly the same thing. These shortcuts are not necessary, but they are really convenient!
 
+**Other handy command-related shortcuts**
+
+- <kbd>Ctrl + C</kbd> will cancel the command you are writing, and give you a fresh prompt.
+- <kbd>Ctrl + A</kbd> will bring you to the start of the command you are writing.
+- <kbd>Ctrl + E</kbd> will bring you to the end of the command.
+
 ## Help and resources
 
-**Commands, options, and keystrokes covered in this lesson**
-
-```bash
-cd
-ls
-man
-pwd
-~ (home dir)
-. (current dir)
-.. (parent dir)
-*  (wildcard)
-echo
-ctrl-C (cancel current command)
-ctrl-R (reverse history search)
-ctrl-A (start of line)
-ctrl-E (end of line)
-history
-! (repeat cmd)
-cat
-less
-head
-tail
-cp
-mkdir
-mv
-rm
-nano
-```
 ### Want to learn more about the shell?
 
 shell cheat sheets:<br>
