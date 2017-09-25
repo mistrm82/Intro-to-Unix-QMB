@@ -7,61 +7,61 @@ authors: "Sheldon  McKay, Mary Piper, Radhika Khetani"
 
 We will spend most of our time learning about the basics of the shell by manipulating some experimental data.
 
-Since we are going to be working with this data on a remote server, **Orchestra**, we first need to log onto the server. After we're logged on, we will each make our own copy of the example data folder.
+Since we are going to be working with this data on a remote server, **Orchestra2 (O2)**, we first need to log onto the server. After we're logged on, we will each make our own copy of the example data folder.
 
-#### Logging onto Orchestra with Macs
+### Logging in
 
-Using the Terminal, you can use the command 'ssh' and your eCommons username to login. Type:
+**With Macs**
 
-```ssh username@orchestra.med.harvard.edu```
+Macs have a utility application called "**Terminal**" for performing tasks on the command line (shell), both locally and on remote machines. We will be using it to log into O2.
 
-You will receive a prompt for your password, and you should type in your ECommons password. 
+**With Windows**
 
-#### Logging onto Orchestra with Windows
+By default, there is no terminal for the bash shell available in the Windows OS, so you have to use a downloaded program, "**Git BASH**". Git BASH is part of the [Git for Windows](https://git-for-windows.github.io/) download, and is a shell (bash) emulator.
 
-By default, there is no terminal for the bash shell available in the Windows OS, so you have to use a downloaded program, **[Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)**.
+> You can also use [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to log in to remote machines from Windows computers, but it is a little more involved and has different capabilities.
 
-When you open Putty, you will see the following GUI.
+#### Let's log in! 
 
-![Putty window](../img/putty-1.PNG)
+Type in the following command with your username to login:
 
-Type in "orchestra.med.harvard.edu" in the window under "Host Name (or IP address) and click on "Open"
+```bash
+ssh username@o2.hms.harvard.edu
+```
 
-![Connect to Orchestra](../img/putty-2.PNG)
+You will receive a prompt for your password, and you should type in your associated password; note that the cursor will *not move* as you type in your password.
 
-A warning window will pop up the first time you try to connect to a cluster (remote server), say "Yes". Once you do that, you should be able to enter your login ID which is your eCommons ID. Add ID and press enter.
+A warning might pop up the first time you try to connect to a remote machine, type "Yes" or "Y". 
 
-![Log in](../img/putty-5.PNG)
+### Copying example data folder
 
-Once you press enter, it will prompt you for a password. Type in your password, when you do this nothing will appear on the screen until you press enter. When you press enter, the interface will change and you have started a bash terminal.
+Once logged in, you should see the O2 icon, some news, and the command prompt: 
 
-> Windows users can also get a bash emulator to mimic the Mac Terminal. Such a program is available within the [Git for Windows](https://git-for-windows.github.io/) download, and is called **Git BASH**
-
-#### Copying example data folder
-
-Once logged in, you should see the Orchestra news and the command prompt: 
-
-```$ ```
-
-The command prompt will have some characters before it, this is telling you the name of the login node/computer you are working on.  
+```bash
+[rc_training10@login01 ~]$ 
+```
 
 Just like with `>` in R, when you see the `$`, it means that bash is ready to start accepting commands from you.
 
-The first command we will type on the command prompt will be to start a so-called "interactive session" on Orchestra.
+The command prompt will have some characters before it, something like `[rc_training01@login01 ~]`, this is telling you what the name of the computer you are working on is.
 
-```$ bsub -Is -q interactive bash```
+The first command we will type on the command prompt will be to start a so-called "interactive session" on O2.
 
-Press enter after you type in that command. You will get a couple of messages, but in a few seconds you should get back the command prompt `$`; the string of characters before the command prompt, however, have changed. They should say something like `rsk27@clarinet002-062`; the clarinets (or bassoons etc.) are worker nodes on Orchestra.
+```bash
+$ srun --pty -p interactive -t 0-12:00 --mem 8G 
+```
 
-Make sure that your command prompt is now preceded by a character string that contain words like "clarinet", "bassoon", etc. We want to do all of our work on the worker nodes, and not on the head/login node.
+Press enter after you type in that command. You will get a couple of messages, but in a few seconds you should get back the command prompt `$`; the string of characters before the command prompt, however, have changed. They should say something like `[rc_training01@compute-a-16-73 ~]`. *We will be explaining what this means in more detail later when we talk about HPC and O2.* 
+
+Make sure that your command prompt is now preceded by a character string that contains the word "compute". We want to do all of our work on the worker nodes, and not on the head/login node.
 
 Copy the example data folder to your home directory using the following command:
 
 ```
-$ cp -r /groups/hbctraining/unix-intro/ .
+$ cp -r /n/groups/hbctraining/unix-intro/ .
 # Don't miss the dot/period "." at the end of this command!
 ```   
-`cp` is the command for copy. It requires you to specify the location of the item(s) you want to copy (`/groups/hbctraining/unix-intro/`) and the destination (`.`); please note the space between the 2 in the command. The `.` specifies that we want to copy it to "here", the current directory we are in. The "-r" is an option/argument that modifies the copy command to do something slightly different than usual.
+`cp` is the command for copy. It requires you to specify the location of the item(s) you want to copy (`/n/groups/hbctraining/unix-intro/`) and the destination (`.`); please note the space between the 2 in the command. The `.` specifies that we want to copy it to "here", the current directory we are in. The "-r" is an option/argument that modifies the copy command to do something slightly different than usual.
 
 ## Starting with the shell
 
