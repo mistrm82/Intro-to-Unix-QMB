@@ -286,15 +286,15 @@ Move back to our `raw_fastq` directory and enter the following command:
 
 The `less` command opens the file, and lets you navigate through it. The keys used to move around the file are identical to the `man` command.
 
-**Some commands in `less`**
+<span class="caption">Shortcuts for `less`</span>
 
-| key     | action |
-| ------- | ---------- |
-| "space" | to go forward |
-|  "b"    | to go backwards |
-|  "g"    | to go to the beginning |
-|  "G"    | to go to the end |
-|  "q"    | to quit |
+| key              | action                 |
+| ---------------- | ---------------------- |
+| <kbd>SPACE</kbd> | to go forward          |
+| <kbd>b</kbd>     | to go backwards        |
+| <kbd>g</kbd>     | to go to the beginning |
+| <kbd>G</kbd>     | to go to the end       |
+| <kbd>q</kbd>     | to quit                |
 
 Hit 'q' to exit the `less` interface and get the command prompt back.
 
