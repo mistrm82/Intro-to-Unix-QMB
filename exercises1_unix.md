@@ -70,7 +70,7 @@ a. Cut these columns from the whole dataset and save it as a file called, **`chr
 
 b. Check the cut file to make sure that it looks good using `less`. 
 
-####Extracting genomic coordinates of exon features
+#### Extracting genomic coordinates of exon features
 
 c. We only want the exons (not CDS or start_codon features), so let's use `grep` to only keep the exon lines and save to file, **`chr1_exons`**:
 
@@ -83,7 +83,7 @@ e. We can use a new tool, `sort`, to remove exons that show up more than once.  
 
 		`$ sort -u chr1_exons`
 
-####Counting the total number of exons
+#### Counting the total number of exons
 
 f. Now, to count how many unique exons are on chromosome 1, pipe the `sort` output to the `wc -l` command.
     
