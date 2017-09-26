@@ -20,7 +20,7 @@
 7. Print the contents of `sequences-copy.fq` to the screen. 
 8. Use the `head` command to keep only the frst two sequences of this file. 
 9. The last two lines of the file `sequences-copy.fq` represent a protein sequence. Use the `tail` command to take those two lines and redirect them into a new file called `protein.fa`.
-
+10. Use `grep` to search for the patterm `CAGCT` in the `sequences-copy.fq` file. Use your shell knowledge to count how many times that pattern appears in the file. Now use the `man` pages to find out how you can count using the `grep` command. 
 
 
 
