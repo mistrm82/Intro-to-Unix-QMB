@@ -54,5 +54,5 @@
 
 **Answer:** `grep CAGCT sequences-copy.fa | wc -l`
 
-	     `grep -c CAGCT sequences-copy.fa | wc -l`
+	     `grep -c CAGCT sequences-copy.fa `
 
