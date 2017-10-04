@@ -19,7 +19,7 @@
 
 ### Exercise 2: "Quality trimming on 6 Fastq files, *in parallel* with multithreading"
 * Check and make sure you have an interactive session going and also that you are in the `~/unix-intro/` directory.
-* Use `nano` to open the `trimmomatic-multithreaded-slurm.sh` file and make note of the `sbatch` submission command in it. Name some of the SLURM/SBATCH options that wea re requesting for each job in the loop.
+* Use `nano` to open the `trimmomatic-multithreaded-slurm.sh` file and make note of the `sbatch` submission command in it. Name some of the SLURM/SBATCH options that we are requesting for each job in the loop.
 * Run `trimmomatic-multithreaded-slurm.sh` using `sh` instead of `sbatch`.
 * How many job submission notifications did you get?
 * Once submitted, immediately check the status of your jobs. How many are running and how many are pending?
