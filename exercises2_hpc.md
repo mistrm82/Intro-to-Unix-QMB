@@ -3,8 +3,10 @@
 * Log into O2 using Terminal (on Macs) or Git BASH (on Windows)
 * Start an interactive session with a single core
 * Change directories into the `~/unix-intro/`, and copy over files using the following command:
-  
+
+```
   $ cp /n/groups/hbctraining/unix-intro/other/*-slurm* . 
+```
 
 * Open the `trimmomatic-serial-slurm.sbatch` script with `nano` 
 * Modify the SLURM (`SBATCH`) options to use only 4 cores
