@@ -60,11 +60,11 @@ Submit the script to the SLURM queue using `sbatch`
 * Check and make sure you have an interactive session going and also that you are in the `~/unix-intro/` directory.
 
 
-**Answer: ** `pwd` **and you should see `compute` before your command prompt**
+**Answer:** `pwd` **and you should see `compute` before your command prompt**
 
 * Use `nano` to open the `trimmomatic-multithreaded-slurm.sh` file and make note of the `sbatch` submission command in it. Name some of the SLURM/SBATCH options that we are requesting for each job in the loop.
 
-**Answer: ** `-p short -n 6 -t 0-2:00 --mem=2G --job-name trim-multithread -o %j.out -e %j.err --wrap`
+**Answer:** `-p short -n 6 -t 0-2:00 --mem=2G --job-name trim-multithread -o %j.out -e %j.err --wrap`
 
 * Run `trimmomatic-multithreaded-slurm.sh` using `sh` instead of `sbatch`.
 
