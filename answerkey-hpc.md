@@ -45,7 +45,7 @@ Submit the script to the SLURM queue using `sbatch`
 
 * Once submitted, immediately check the status of your job. How many jobs do you see running? Is there a difference in the "partition" on which they are running?
 
-**Answer:** `squeue -u eCommonID/rc_training00` You should only see one job running, on the "short" partition.
+**Answer:** `squeue -u eCommonID/rc_training00` **You should only see one job running, on the "short" partition.**
 
 * When the job is completed it will create a new directory with new files: What is the name of the new directory? How many new files and directories were created within it?
 
@@ -75,7 +75,7 @@ Submit the script to the SLURM queue using `sbatch`
 
 * Once submitted, immediately check the status of your jobs. How many are running and how many are pending?
 
-**Answer:** `squeue -u eCommonsID` The number running and pending will be variable depending on availability.
+**Answer:** `squeue -u eCommonsID` **The number running and pending will be variable depending on availability.**
 
 Once again, when the job is complete a new directory with new files will be created. Use `ls -l` to determine if the same output was generated for both.
 * What do you think the advantage is of running the job(s) this way as compared to Exercise 1?
