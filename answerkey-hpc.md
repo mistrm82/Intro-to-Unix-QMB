@@ -59,7 +59,8 @@ Submit the script to the SLURM queue using `sbatch`
 ### Exercise 2: "Quality trimming on 6 Fastq files, *in parallel* with multithreading"
 * Check and make sure you have an interactive session going and also that you are in the `~/unix-intro/` directory.
 
-**Answer:** `cp other/trimmomatic*sh .`
+
+**Answer: ** `pwd` **and you should see `compute` before your command prompt**
 
 * Use `nano` to open the `trimmomatic-multithreaded-slurm.sh` file and make note of the `sbatch` submission command in it. Name some of the SLURM/SBATCH options that we are requesting for each job in the loop.
 
